@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 608 776" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;">
+    <g transform="matrix(1.33333,0,0,1.33333,0,0)">
+        <g id="Taso-1" serif:id="Taso 1" transform="matrix(1,0,0,1,742.14,-53.076)">
+            <rect id="rect3164" x="-685.71" y="216.65" width="342.86" height="412.86" style="fill:url(#_Linear1);stroke:rgb(0,94,4);stroke-width:10px;"/>
+            <rect id="rect2380" x="-737.14" y="58.076" width="445.71" height="162.86" style="fill:url(#_Linear2);stroke:rgb(0,94,4);stroke-width:10px;"/>
+            <rect id="rect3160" x="-467.87" y="63.076" width="68.596" height="152.5" style="fill:rgb(0,216,24);"/>
+            <rect id="rect3162" x="-381.3" y="63.076" width="27.168" height="152.5" style="fill:rgb(0,216,24);"/>
+            <rect id="rect3168" x="-492.16" y="226.29" width="68.596" height="396.79" style="fill:rgb(0,216,24);"/>
+            <rect id="rect3170" x="-405.58" y="226.29" width="27.168" height="396.79" style="fill:rgb(0,216,24);"/>
+            <rect id="rect3172" x="-731.79" y="63.097" width="51.429" height="152.66" style="fill:rgb(0,130,14);"/>
+            <rect id="rect3174" x="-680.36" y="225.95" width="51.429" height="398.37" style="fill:rgb(0,130,14);"/>
+            <rect id="rect3178" x="-739.43" y="59.382" width="16.162" height="156.57" style="fill:rgb(0,94,4);"/>
+            <rect id="rect3180" x="-689.93" y="224.04" width="16.162" height="403.05" style="fill:rgb(0,94,4);"/>
+            <rect id="rect3182" x="-667.79" y="63.097" width="7.992" height="152.66" style="fill:rgb(0,130,14);"/>
+            <rect id="rect3184" x="-618.04" y="225.73" width="7.992" height="398.63" style="fill:rgb(0,130,14);"/>
+        </g>
+    </g>
+    <defs>
+        <linearGradient id="_Linear1" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(350.546,0,0,350.546,-689.556,423.091)"><stop offset="0" style="stop-color:rgb(0,154,17);stop-opacity:1"/><stop offset="1" style="stop-color:rgb(0,203,23);stop-opacity:1"/></linearGradient>
+        <linearGradient id="_Linear2" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(455.71,0,0,455.71,-742.14,139.51)"><stop offset="0" style="stop-color:rgb(0,154,17);stop-opacity:1"/><stop offset="1" style="stop-color:rgb(0,203,23);stop-opacity:1"/></linearGradient>
+    </defs>
+</svg>
