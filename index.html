@@ -22,6 +22,11 @@
       -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
     }
 
+    .mask-image-fade {
+      mask-image: linear-gradient(to bottom, black 80%, transparent);
+      -webkit-mask-image: linear-gradient(to bottom, black 80%, transparent);
+    }
+
     body {
       font-family: Helvetica, Arial, sans-serif;
     }
@@ -63,7 +68,7 @@
         <p class="text-gray-800 font-semibold">#DevOpsBeforeItWasCool</p>
       </div>
       <div class="md:w-1/2 flex flex-col items-end text-right">
-        <img src="mario.webp" alt="Mario Vejlupek" class="rounded-lg max-h-96 mb-4">
+        <img src="mario.webp" alt="Mario Vejlupek" class="rounded-lg h-[500px] object-cover mb-4 mask-image-fade">
         <p class="text-lg font-bold text-gray-800">Mario Vejlupek</p>
         <p class="text-gray-600">DevOps Engineer // DevOps Architect</p>
       </div>
@@ -72,15 +77,6 @@
     <!-- Infinite CSS Carousel (optimized seamless scroll) -->
     <div class="overflow-hidden w-full fade-mask relative">
       <div class="scroll-track flex gap-12 w-max">
-        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/kubernetes/kubernetes-plain.svg" alt="Kubernetes" class="h-10 shrink-0">
-        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/terraform/terraform-original.svg" alt="Terraform" class="h-10 shrink-0">
-        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="Python" class="h-10 shrink-0">
-        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg" alt="Git" class="h-10 shrink-0">
-        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/gitlab/gitlab-original.svg" alt="GitLab" class="h-10 shrink-0">
-        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/azure/azure-original.svg" alt="Azure" class="h-10 shrink-0">
-        <img src="https://argo-cd.readthedocs.io/en/stable/assets/logo.png" alt="Argo CD" class="h-10 shrink-0">
-        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="AWS" class="h-10 shrink-0">
-        <img src="https://raw.githubusercontent.com/grafana/grafana/main/public/img/grafana_icon.svg" alt="Grafana" class="h-10 shrink-0">
         <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/kubernetes/kubernetes-plain.svg" alt="Kubernetes" class="h-10 shrink-0">
         <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/terraform/terraform-original.svg" alt="Terraform" class="h-10 shrink-0">
         <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="Python" class="h-10 shrink-0">
