@@ -19,6 +19,18 @@
       }
     }
 
+    @keyframes scroll-left {
+      0% {
+        transform: translateX(0%);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+    .animate-scroll-left {
+      animation: scroll-left 30s linear infinite;
+    }
+
     .fade-mask {
       mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
       -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
@@ -49,51 +61,30 @@
       </div>
     </div>
 
-    <!-- Carousel with fade effect -->
-    <div class="overflow-hidden relative fade-mask">
-      <div class="inline-flex animate-[scroll_30s_linear_infinite] w-max">
-        <div class="flex items-center space-x-12 pr-12">
-          <!-- Tool icons -->
-          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/kubernetes/kubernetes-plain.svg"
-            alt="Kubernetes" class="h-10">
-          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/terraform/terraform-original.svg"
-            alt="Terraform" class="h-10">
-          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg"
-            alt="Python" class="h-10">
-          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg" alt="GitOps"
-            class="h-10">
-          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/gitlab/gitlab-original.svg"
-            alt="Gitlab" class="h-10">
-          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/azure/azure-original.svg"
-            alt="Azure" class="h-10">
-          <img src="https://argo-cd.readthedocs.io/en/stable/assets/logo.png" alt="Argo CD" class="h-10">
-          <img
-            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg"
-            alt="AWS" class="h-10">
-          <img src="https://raw.githubusercontent.com/grafana/grafana/main/public/img/grafana_icon.svg" alt="Grafana"
-            class="h-10">
+    <!-- Infinite CSS Carousel (no JS) -->
+    <div class="overflow-hidden w-full fade-mask">
+      <div class="flex gap-12 animate-scroll-left">
+        <!-- Icon set (duplicated for smooth loop) -->
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/kubernetes/kubernetes-plain.svg" alt="Kubernetes" class="h-10 shrink-0">
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/terraform/terraform-original.svg" alt="Terraform" class="h-10 shrink-0">
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="Python" class="h-10 shrink-0">
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg" alt="Git" class="h-10 shrink-0">
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/gitlab/gitlab-original.svg" alt="GitLab" class="h-10 shrink-0">
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/azure/azure-original.svg" alt="Azure" class="h-10 shrink-0">
+        <img src="https://argo-cd.readthedocs.io/en/stable/assets/logo.png" alt="Argo CD" class="h-10 shrink-0">
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="AWS" class="h-10 shrink-0">
+        <img src="https://raw.githubusercontent.com/grafana/grafana/main/public/img/grafana_icon.svg" alt="Grafana" class="h-10 shrink-0">
 
-
-          <!-- Repeat icons for continuous scroll -->
-          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/kubernetes/kubernetes-plain.svg"
-            alt="Kubernetes" class="h-10">
-          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/terraform/terraform-original.svg"
-            alt="Terraform" class="h-10">
-          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg"
-            alt="Python" class="h-10">
-          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg" alt="GitOps"
-            class="h-10">
-          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/gitlab/gitlab-original.svg"
-            alt="Gitlab" class="h-10">
-          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/azure/azure-original.svg"
-            alt="Azure" class="h-10">
-          <img src="https://argo-cd.readthedocs.io/en/stable/assets/logo.png" alt="Argo CD" class="h-10">
-          <img
-            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original.svg"
-            alt="AWS" class="h-10">
-          <img src="https://raw.githubusercontent.com/grafana/grafana/main/public/img/grafana_icon.svg" alt="Grafana"
-            class="h-10">
-        </div>
+        <!-- Duplicate for infinite loop -->
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/kubernetes/kubernetes-plain.svg" alt="Kubernetes" class="h-10 shrink-0">
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/terraform/terraform-original.svg" alt="Terraform" class="h-10 shrink-0">
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="Python" class="h-10 shrink-0">
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg" alt="Git" class="h-10 shrink-0">
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/gitlab/gitlab-original.svg" alt="GitLab" class="h-10 shrink-0">
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/azure/azure-original.svg" alt="Azure" class="h-10 shrink-0">
+        <img src="https://argo-cd.readthedocs.io/en/stable/assets/logo.png" alt="Argo CD" class="h-10 shrink-0">
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="AWS" class="h-10 shrink-0">
+        <img src="https://raw.githubusercontent.com/grafana/grafana/main/public/img/grafana_icon.svg" alt="Grafana" class="h-10 shrink-0">
       </div>
     </div>
   </div>
