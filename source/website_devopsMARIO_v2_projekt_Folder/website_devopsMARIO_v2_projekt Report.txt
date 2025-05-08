@@ -1,0 +1,79 @@
+Package Report
+
+-----------------------------------------------------------------------------
+Document:
+Name: website_devopsMARIO_v2_projekt.ai
+Color Mode: RGB color
+Color Profile: sRGB IEC61966-2.1
+Ruler Units: pixels
+Artboard Dimensions: 1920 px x 5776,4604 px
+Show Images in Outline Mode: OFF
+Highlight Substituted Fonts: OFF
+Highlight Substituted Glyphs: OFF
+Preserve Text Editability
+Simulate Colored Paper: OFF
+
+-----------------------------------------------------------------------------
+Spot Color Objects:
+Unnamed (CMYK)
+
+-----------------------------------------------------------------------------
+Missing Fonts:NONE
+
+-----------------------------------------------------------------------------
+Protected Fonts that were not packaged:NONE
+
+-----------------------------------------------------------------------------
+Fonts:
+Arial (OTF)
+Pixelify Sans SemiBold (TrueType)
+Myriad Pro (OTF)
+Helvetica (TrueType)
+Helvetica Bold (TrueType)
+Helvetica Bold Oblique (TrueType)
+
+-----------------------------------------------------------------------------
+Embedded Fonts:
+NONE
+
+-----------------------------------------------------------------------------
+Missing Links:
+NONE
+
+-----------------------------------------------------------------------------
+Linked Images:
+
+/Users/kristynavejlupek/Projects/DevOpsMario/photos/color/mario_cut01 copy.png
+Type: Transparent RGB
+Bits per Pixel: 32
+Channels: 4
+Size: 52990K, 3043 by 4458 pixels
+Dimensions: 654,8 by 959,283 points 
+Resolution: 334,6 by 334,6 pixels per inch
+
+
+/Users/kristynavejlupek/Projects/DevOpsMario/Website/pix/MD944_MacBook_Mockup/MacBook_Mockup_1 copy grey.jpg
+Type: RGB
+Bits per Pixel: 24
+Channels: 3
+Size: 35156K, 4000 by 3000 pixels
+Dimensions: 1165,566 by 874,174 points 
+Resolution: 247,09 by 247,09 pixels per inch
+
+
+/Users/kristynavejlupek/Projects/DevOpsMario/photos/color/IMG_0988-2.jpg
+Type: RGB
+Bits per Pixel: 24
+Channels: 3
+Size: 58482K, 3648 by 5472 pixels
+Dimensions: 531,205 by 796,807 points 
+Resolution: 494,454 by 494,454 pixels per inch
+
+
+/Users/kristynavejlupek/Projects/DevOpsMario/Website/pix/ivan-n-AfStyhXC5kM-unsplash.jpg
+Type: RGB
+Bits per Pixel: 24
+Channels: 3
+Size: 31149K, 3765 by 2824 pixels
+Dimensions: 628,991 by 471,785 points 
+Resolution: 430,976 by 430,976 pixels per inch
