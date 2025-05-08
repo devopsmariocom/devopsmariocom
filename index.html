@@ -32,16 +32,46 @@
       width: 100vw;
       background: #232323;
       display: flex;
-      justify-content: space-evenly;
+      justify-content: center;
       align-items: center;
       height: 110px;
       z-index: 30;
+      overflow: hidden;
     }
-    .bottom-dot {
-      width: 72px; height: 72px;
-      background: #E6E6E6;
-      border-radius: 50%;
-      margin: 0 32px;
+    .icon-carousel {
+      display: flex;
+      align-items: center;
+      animation: scroll 25s linear infinite;
+      white-space: nowrap;
+      width: max-content;
+    }
+    .icon-group {
+      display: flex;
+      align-items: center;
+      gap: 64px;
+      padding: 0 32px;
+      min-width: max-content;
+    }
+    .tech-icon {
+      width: 40px;
+      height: 40px;
+      object-fit: contain;
+      filter: brightness(0) invert(1);
+      opacity: 0.8;
+      transition: opacity 0.3s ease;
+      flex: 0 0 40px;
+      margin: 0;
+    }
+    .tech-icon:hover {
+      opacity: 1;
+    }
+    @keyframes scroll {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
     }
     @media (max-width: 900px) {
       .hero-content { flex-direction: column; align-items: flex-start; }
@@ -131,12 +161,30 @@
     <img src="Mario-Hero.webp" alt="Mario Vejlupek" class="hero-photo-img">
     <!-- Bottom Dots Bar -->
     <div class="bottom-dots">
-      <div class="bottom-dot"></div>
-      <div class="bottom-dot"></div>
-      <div class="bottom-dot"></div>
-      <div class="bottom-dot"></div>
-      <div class="bottom-dot"></div>
-      <div class="bottom-dot"></div>
+      <div class="icon-carousel">
+        <!-- First set of icons -->
+        <div class="icon-group">
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/kubernetes/kubernetes-plain.svg" alt="Kubernetes" class="tech-icon">
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/terraform/terraform-original.svg" alt="Terraform" class="tech-icon">
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="Python" class="tech-icon">
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg" alt="Git" class="tech-icon">
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/gitlab/gitlab-original.svg" alt="GitLab" class="tech-icon">
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/azure/azure-original.svg" alt="Azure" class="tech-icon">
+          <img src="https://argo-cd.readthedocs.io/en/stable/assets/logo.png" alt="Argo CD" class="tech-icon">
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="AWS" class="tech-icon">
+        </div>
+        <!-- Duplicate set for seamless loop -->
+        <div class="icon-group">
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/kubernetes/kubernetes-plain.svg" alt="Kubernetes" class="tech-icon">
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/terraform/terraform-original.svg" alt="Terraform" class="tech-icon">
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="Python" class="tech-icon">
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg" alt="Git" class="tech-icon">
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/gitlab/gitlab-original.svg" alt="GitLab" class="tech-icon">
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/azure/azure-original.svg" alt="Azure" class="tech-icon">
+          <img src="https://argo-cd.readthedocs.io/en/stable/assets/logo.png" alt="Argo CD" class="tech-icon">
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="AWS" class="tech-icon">
+        </div>
+      </div>
     </div>
   </section>
 
