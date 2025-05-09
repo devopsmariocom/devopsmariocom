@@ -41,7 +41,7 @@
     .icon-carousel {
       display: flex;
       align-items: center;
-      animation: scroll 25s linear infinite;
+      animation: scroll 30s linear infinite;
       white-space: nowrap;
       width: max-content;
     }
@@ -70,7 +70,7 @@
         transform: translateX(0);
       }
       100% {
-        transform: translateX(-50%);
+        transform: translateX(calc(-33.333% - 64px));
       }
     }
     @media (max-width: 900px) {
@@ -133,17 +133,56 @@
       border-radius: 18px;
       z-index: 20;
     }
+    .nav-container {
+      position: absolute;
+      top: 8px;
+      right: 12px;
+      z-index: 40;
+    }
+    /* Close menu when clicking outside */
+    .nav-links:focus-within {
+      right: 0;
+    }
+    .nav-links:not(:focus-within) {
+      right: -100%;
+    }
+    /* Ensure menu items are focusable */
+    .nav-links a:focus {
+      outline: none;
+    }
+    /* Close menu when clicking a link */
+    .nav-links a:focus ~ .nav-links {
+      right: -100%;
+    }
   </style>
 </head>
 
 <body class="relative min-h-screen overflow-x-hidden">
   <!-- Navigation -->
-  <nav class="absolute top-8 right-12 z-40 flex space-x-12 text-black text-base font-normal">
-    <a href="#services">Services</a>
-    <a href="#portfolio">Case Studies</a>
-    <a href="#how">How it works?</a>
-    <a href="#about">About Me</a>
-    <a href="#contact">Let's Talk</a>
+  <nav class="nav-container">
+    <!-- Hidden checkbox for menu state -->
+    <input type="checkbox" id="menu-toggle" class="hidden peer">
+    
+    <!-- Hamburger Menu Button -->
+    <label for="menu-toggle" class="hamburger-menu cursor-pointer flex flex-col justify-between w-[30px] h-[21px] bg-transparent border-none p-0 z-50 md:hidden">
+      <span class="w-full h-[3px] bg-[#232323] rounded-[3px] transition-all duration-300 peer-checked:translate-y-[9px] peer-checked:rotate-45"></span>
+      <span class="w-full h-[3px] bg-[#232323] rounded-[3px] transition-all duration-300 peer-checked:opacity-0"></span>
+      <span class="w-full h-[3px] bg-[#232323] rounded-[3px] transition-all duration-300 peer-checked:-translate-y-[9px] peer-checked:-rotate-45"></span>
+    </label>
+    
+    <!-- Navigation Links -->
+    <div class="nav-links fixed md:static top-0 right-[-100%] md:right-0 w-full md:w-auto h-screen md:h-auto bg-[#232323] md:bg-transparent flex flex-col md:flex-row items-center justify-center md:justify-end gap-8 md:gap-12 p-20 md:p-0 transition-all duration-300 peer-checked:right-0">
+      <!-- Logo for mobile menu -->
+      <div class="md:hidden mb-12">
+        <img src="DevOpsMario-Logo-Tail.svg" alt="DevOpsMario Logo" class="h-14 w-auto">
+      </div>
+      
+      <a href="#services" class="text-white md:text-[#232323] text-2xl md:text-base hover:text-[#E46C6C] transition-colors duration-300">Services</a>
+      <a href="#portfolio" class="text-white md:text-[#232323] text-2xl md:text-base hover:text-[#E46C6C] transition-colors duration-300">Case Studies</a>
+      <a href="#how" class="text-white md:text-[#232323] text-2xl md:text-base hover:text-[#E46C6C] transition-colors duration-300">How it works?</a>
+      <a href="#about" class="text-white md:text-[#232323] text-2xl md:text-base hover:text-[#E46C6C] transition-colors duration-300">About Me</a>
+      <a href="https://calendar.app.google/8g9KQJMnCWqejdXn6" class="text-white md:text-[#232323] text-2xl md:text-base hover:text-[#E46C6C] transition-colors duration-300">Let's Talk</a>
+    </div>
   </nav>
 
   <!-- Hero Section -->
@@ -173,7 +212,29 @@
           <img src="https://argo-cd.readthedocs.io/en/stable/assets/logo.png" alt="Argo CD" class="tech-icon">
           <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="AWS" class="tech-icon">
         </div>
-        <!-- Duplicate set for seamless loop -->
+        <!-- Second set of icons -->
+        <div class="icon-group">
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/kubernetes/kubernetes-plain.svg" alt="Kubernetes" class="tech-icon">
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/terraform/terraform-original.svg" alt="Terraform" class="tech-icon">
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="Python" class="tech-icon">
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg" alt="Git" class="tech-icon">
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/gitlab/gitlab-original.svg" alt="GitLab" class="tech-icon">
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/azure/azure-original.svg" alt="Azure" class="tech-icon">
+          <img src="https://argo-cd.readthedocs.io/en/stable/assets/logo.png" alt="Argo CD" class="tech-icon">
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="AWS" class="tech-icon">
+        </div>
+        <!-- Third set of icons -->
+        <div class="icon-group">
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/kubernetes/kubernetes-plain.svg" alt="Kubernetes" class="tech-icon">
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/terraform/terraform-original.svg" alt="Terraform" class="tech-icon">
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="Python" class="tech-icon">
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg" alt="Git" class="tech-icon">
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/gitlab/gitlab-original.svg" alt="GitLab" class="tech-icon">
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/azure/azure-original.svg" alt="Azure" class="tech-icon">
+          <img src="https://argo-cd.readthedocs.io/en/stable/assets/logo.png" alt="Argo CD" class="tech-icon">
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="AWS" class="tech-icon">
+        </div>
+        <!-- Fourth set of icons -->
         <div class="icon-group">
           <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/kubernetes/kubernetes-plain.svg" alt="Kubernetes" class="tech-icon">
           <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/terraform/terraform-original.svg" alt="Terraform" class="tech-icon">
@@ -221,7 +282,7 @@
       <div class="flex flex-col items-center md:items-end">
         <div class="mb-4">
           <span class="inline-block font-mono tracking-widest text-lg md:text-2xl text-white bg-[#D97D7D] px-3 py-1 mb-1">RebuildingKubernetes</span><br>
-          <span class="inline-block font-mono tracking-widest text-lg md:text-2xl text-white bg-[#D97D7D] px-3 py-1">Infrastructure&nbsp;&nbsp;for&nbsp;a&nbsp;WebAgency</span>
+          <span class="inline-block font-mono tracking-widest text-lg md:text-2xl text-white bg-[#D97D7D] px-3 py-1 mb-1">Infrastructure&nbsp;&nbsp;for&nbsp;a&nbsp;WebAgency</span>
         </div>
         <div class="text-center md:text-right max-w-[480px] text-gray-800 text-lg">
           This two-year gradual migration involved moving from a custom Kubernetes solution to <b>AWS EKS</b>. I redesigned deployment strategies to <b>reduce deployment time from hours to minutes</b>, migrated PostgreSQL databases to managed Aurora or operator-based solutions, and transitioned Prometheus monitoring to <b>Mimir</b> and Loki. Additionally, I implemented complex egress strategies with <b>Istio</b> and Cilium to ensure <b>secure and reliable egress networking</b>.<br>---
@@ -351,7 +412,7 @@
       <div class="flex-1 flex flex-col items-start min-w-[320px] z-10">
         <div class="mb-6">
           <div class="font-bold mb-1">BILLING ADDRESS</div>
-          <div>Vejlupek s.r.o.<br>Kurzova 2222/16, 155 00 Prague<br>Czech republic<br>Business ID xxxx</div>
+          <div>Vejlupek s.r.o.<br>Kurzova 2222/16, 155 00 Prague<br>Czech republic<br>VAT ID CZ 17452899</div>
         </div>
         <div>
           <div class="font-bold mb-1">CONTACT ADDRESS</div>
@@ -360,6 +421,16 @@
       </div>
     </div>
   </footer>
+
+  <!-- Add this minimal JavaScript before closing body tag -->
+  <script>
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        document.getElementById('menu-toggle').checked = false;
+      });
+    });
+  </script>
+
 </body>
 
 </html>
