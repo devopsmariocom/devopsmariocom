@@ -35,13 +35,23 @@ jsFiles.forEach(file => {
 });
 
 // Create the combined HTML
-const combinedHTML = html
+let combinedHTML = html
   .replace(/<link[^>]*>/g, '') // Remove all link tags
   .replace(/<script[^>]*src="[^"]*"[^>]*><\/script>/g, '') // Remove all script tags with src
   .replace('</head>', `<style>${combinedCSS}</style></head>`)
   .replace('</body>', `<script>${combinedJS}</script></body>`);
 
+// Set your base path
+const basePath = '/devopsmariocom';
+
+// Fix asset URLs in the HTML
+let fixedHTML = combinedHTML
+  // Fix _next/static and /_next/ to include basePath
+  .replace(/(src|href)="\/_next\//g, `$1="${basePath}/_next/`)
+  // Fix root-level static assets (e.g. /DevOpsMario-Logo-Tail.svg)
+  .replace(/(src|href)="\/(?!devopsmariocom|_next|https?:|#)/g, `$1="${basePath}/`);
+
 // Write the combined file
-fs.writeFileSync(path.join(__dirname, 'out/combined.html'), combinedHTML);
+fs.writeFileSync(path.join(__dirname, 'out/combined.html'), fixedHTML);
 
 console.log('Combined file created at out/combined.html'); 
