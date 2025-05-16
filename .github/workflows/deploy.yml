@@ -66,11 +66,6 @@ jobs:
       - name: Copy CNAME to out
         run: cp CNAME out/CNAME
 
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: ./out
-
   deploy:
     environment:
       name: github-pages
@@ -80,54 +75,16 @@ jobs:
     steps:
       - name: Archive artifact
         shell: sh
-        if: runner.os == 'Linux'
         run: |
           echo ::group::Archive artifact
           tar \
             --dereference --hard-dereference \
-            --directory "$INPUT_PATH" \
+            --directory "out" \
             -cvf "$RUNNER_TEMP/artifact.tar" \
             --exclude=.git \
             --exclude=.github \
             .
           echo ::endgroup::
-        env:
-          INPUT_PATH: out
-
-      # Switch to gtar (GNU tar instead of bsdtar which is the default in the MacOS runners so we can use --hard-dereference)
-      - name: Archive artifact
-        shell: sh
-        if: runner.os == 'macOS'
-        run: |
-          echo ::group::Archive artifact
-          gtar \
-            --dereference --hard-dereference \
-            --directory "$INPUT_PATH" \
-            -cvf "$RUNNER_TEMP/artifact.tar" \
-            --exclude=.git \
-            --exclude=.github \
-            .
-          echo ::endgroup::
-        env:
-          INPUT_PATH: out
-
-      # Massage the paths for Windows only
-      - name: Archive artifact
-        shell: bash
-        if: runner.os == 'Windows'
-        run: |
-          echo ::group::Archive artifact
-          tar \
-            --dereference --hard-dereference \
-            --directory "$INPUT_PATH" \
-            -cvf "$RUNNER_TEMP\artifact.tar" \
-            --exclude=.git \
-            --exclude=.github \
-            --force-local \
-            "."
-          echo ::endgroup::
-        env:
-          INPUT_PATH: out
 
       - name: Upload artifact
         id: upload-artifact
