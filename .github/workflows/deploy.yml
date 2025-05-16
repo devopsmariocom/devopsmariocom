@@ -37,7 +37,7 @@ jobs:
         uses: actions/configure-pages@v4
 
       - name: Upload artifact
-        run: gh-pages -d out -t true
+        run: touch ./out/.nojekyll && cp ./CNAME ./out/CNAME && gh-pages -d out -t true
   deploy:
     environment:
       name: github-pages
