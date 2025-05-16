@@ -33,9 +33,6 @@ jobs:
       - name: Build with Next.js
         run: npm run build
 
-      - name: Combine assets
-        run: node combine.js
-
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
