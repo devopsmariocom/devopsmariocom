@@ -40,7 +40,7 @@ jobs:
         run: npm install -g gh-pages
 
       - name: Upload artifact
-        run: touch ./out/.nojekyll && cp ./CNAME ./out/CNAME && gh-pages -d out -t true
+        run: touch ./out/.nojekyll && cp ./CNAME ./out/CNAME && gh-pages -d out --nojekyll
   deploy:
     environment:
       name: github-pages
