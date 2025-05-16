@@ -4,8 +4,8 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: process.env.NODE_ENV === 'production' ? '/devopsmariocom' : '',
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/devopsmariocom/' : '',
+  // basePath: process.env.NODE_ENV === 'production' ? '/devopsmariocom' : '',
+  // assetPrefix: process.env.NODE_ENV === 'production' ? '/devopsmariocom/' : '',
 }
 
 module.exports = nextConfig 
