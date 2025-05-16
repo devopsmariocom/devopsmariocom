@@ -29,6 +29,7 @@ export default function HowItWorks() {
       <Image
         src="/Logo-How_It_Works.svg"
         alt="DevOpsMario Logo"
+        loading="lazy"
         width={320}
         height={80}
         className="mx-auto mb-2 w-[260px] md:w-[320px]"

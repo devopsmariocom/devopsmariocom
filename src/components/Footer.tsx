@@ -10,6 +10,7 @@ export default function Footer() {
             <Image
               src="/DevOpsMario-Logo-Tail.svg"
               alt="DevOpsMario Logo"
+              loading="lazy"
               width={200}
               height={80}
               className="h-14 w-auto mr-10 ml-10"
