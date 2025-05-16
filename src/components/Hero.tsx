@@ -1,14 +1,14 @@
 import Image from 'next/image'
 
 const techIcons = [
-  { src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/kubernetes/kubernetes-plain.svg", alt: "Kubernetes" },
-  { src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/terraform/terraform-original.svg", alt: "Terraform" },
-  { src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg", alt: "Python" },
-  { src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg", alt: "Git" },
-  { src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/gitlab/gitlab-original.svg", alt: "GitLab" },
-  { src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/azure/azure-original.svg", alt: "Azure" },
-  { src: "https://argo-cd.readthedocs.io/en/stable/assets/logo.png", alt: "Argo CD" },
-  { src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg", alt: "AWS" },
+  { src: "/kubernetes.svg", alt: "Kubernetes" },
+  { src: "/terraform.svg", alt: "Terraform" },
+  { src: "/python.svg", alt: "Python" },
+  { src: "/git.svg", alt: "Git" },
+  { src: "/gitlab.svg", alt: "GitLab" },
+  { src: "/azure.svg", alt: "Azure" },
+  { src: "/argo-cd.png", alt: "Argo CD" },
+  { src: "/aws.svg", alt: "AWS" },
 ]
 
 export default function Hero() {
