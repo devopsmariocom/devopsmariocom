@@ -37,10 +37,7 @@ jobs:
         uses: actions/configure-pages@v4
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v4
-        with:
-          include-hidden-files: true
-          path: out
+        run: gh-pages -d out -t true
   deploy:
     environment:
       name: github-pages
