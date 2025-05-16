@@ -35,7 +35,6 @@ export default function Services() {
           <Image
             src="/Laptop-Services.webp"
             alt="Laptop with code"
-            loading="lazy"
             width={600}
             height={400}
             className="w-[600px] max-w-full object-contain object-left-bottom select-none pointer-events-none"
