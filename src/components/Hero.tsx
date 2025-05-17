@@ -7,7 +7,7 @@ const techIcons = [
   { src: "/git.svg", alt: "Git" },
   { src: "/gitlab.svg", alt: "GitLab" },
   { src: "/azure.svg", alt: "Azure" },
-  { src: "/argo-cd.png", alt: "Argo CD" },
+  { src: "/argo-cd.svg", alt: "Argo CD" },
   { src: "/aws.svg", alt: "AWS" },
 ]
 
@@ -18,10 +18,14 @@ export default function Hero() {
         <Image src="/DevOpsMario-Logo-Tail.svg" alt="DevOpsMario Logo" width={200} height={80} className="h-20 md:h-14 mx-2" />
       </div>
       
-      <Image src="/Mario-Hero.webp" alt="Mario Vejlupek"
+      <Image 
+        src="/Mario-Hero.webp" 
+        alt="Mario Vejlupek"
         className="absolute inset-0 w-full h-full object-cover object-top grayscale z-10 md:z-[50]"
         width={1920}
         height={1080}
+        sizes="100vw"
+        quality={90}
       />
       
       <div className="absolute inset-0 bg-[#E46C6C] opacity-80 z-20"></div>
