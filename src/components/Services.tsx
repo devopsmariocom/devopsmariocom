@@ -40,6 +40,8 @@ export default function Services() {
             height={400}
             className="w-[600px] max-w-full object-contain object-left-bottom select-none pointer-events-none"
             style={{ minWidth: '340px' }}
+            sizes="(max-width: 768px) 100vw, 600px"
+            quality={90}
           />
         </div>
         <div className="flex-1 flex flex-col justify-center pl-12 pr-8">

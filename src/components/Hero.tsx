@@ -19,12 +19,12 @@ export default function Hero() {
       </div>
       
       <Image 
-        src="/Mario-Hero.webp" 
+        src="/Mario-Hero.webp"
         alt="Mario Vejlupek"
         className="absolute inset-0 w-full h-full object-cover object-top grayscale z-10 md:z-[50]"
         width={1920}
         height={1080}
-        sizes="100vw"
+        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         quality={90}
       />
       

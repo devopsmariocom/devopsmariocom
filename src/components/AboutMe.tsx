@@ -21,18 +21,22 @@ export default function AboutMe() {
         <div className="flex-1 relative flex items-end justify-center min-h-[480px]">
           <Image
             src="/Me-About_Me.webp"
-            alt="Mario at computer"
-            width={520}
+            alt="Mario Vejlupek"
+            width={400}
             height={400}
-            className="w-[520px] max-w-full rounded shadow-lg object-cover object-center z-10"
+            className="w-full h-full object-cover"
+            sizes="(max-width: 768px) 100vw, 400px"
+            quality={90}
           />
           
           <Image
             src="/Computer_Mess-About_Me.webp"
-            alt="Messy computer cables"
-            width={340}
-            height={300}
-            className="absolute right-[-80px] top-[-80px] w-[340px] rounded shadow-lg object-cover object-center z-20 hidden md:block"
+            alt="Computer with code"
+            width={600}
+            height={400}
+            className="w-full h-full object-cover"
+            sizes="(max-width: 768px) 100vw, 600px"
+            quality={90}
           />
           
           <div className="absolute left-0 bottom-12 w-full flex flex-col items-end z-30">
