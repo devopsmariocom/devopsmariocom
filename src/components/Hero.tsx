@@ -1,4 +1,8 @@
+"use client"
+
 import Image from 'next/image'
+import Navigation from './Navigation'
+import { useState } from 'react'
 
 const techIcons = [
   { src: "/kubernetes.svg", alt: "Kubernetes" },
@@ -12,38 +16,67 @@ const techIcons = [
 ]
 
 export default function Hero() {
+  const [menuOpen, setMenuOpen] = useState(false)
   return (
-    <section className="relative min-h-screen w-full overflow-hidden flex flex-col">
-      <div className="absolute top-8 left-0 w-full flex justify-center z-40 px-5">
-        <Image src="/DevOpsMario-Logo-Tail.svg" alt="DevOpsMario Logo" width={200} height={80} className="h-20 md:h-14 mx-2" />
+    <section className="relative min-h-screen w-full overflow-hidden flex flex-col bg-[#E46C6C]">
+      {/* Desktop Nav */}
+      <div className="hidden md:block">
+        <Navigation />
       </div>
-      
-      <Image 
-        src="/Mario-Hero.webp"
-        alt="Mario Vejlupek"
-        className="absolute inset-0 w-full h-full object-cover object-top grayscale z-10 md:z-[50]"
-        width={1920}
-        height={1080}
-        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-        quality={90}
-      />
-      
-      <div className="absolute inset-0 bg-[#E46C6C] opacity-80 z-20"></div>
-      
-      <div className="relative z-30 flex flex-col items-start justify-center h-full px-6 pt-32">
-        <h2 className="text-3xl xs:text-4xl sm:text-5xl font-bold italic text-black mb-4 leading-tight" style={{ fontFamily: 'Helvetica,Arial,sans-serif' }}>
-          DevOps consulting for<br />businesses ready to <span className="bg-[#2895E5] px-2">level up</span>
-        </h2>
-        <div className="text-lg xs:text-xl text-black font-normal mb-8">
-          Bridging Development and Operations<br />for Over 20 Years
+      {/* Top Bar */}
+      <div className="relative z-40 w-full flex items-center justify-between px-6 pt-8">
+        {/* Logo */}
+        <Image src="/DevOpsMario-Hero-Logo.svg" alt="DevOpsMario Logo" width={320} height={100} className="h-12 w-auto md:h-20" />
+        {/* Mobile Hamburger */}
+        <div className="flex-1 flex justify-center">
+          <button
+            className="md:hidden flex flex-col justify-center items-center w-12 h-12 mx-auto"
+            aria-label="Open menu"
+            onClick={() => setMenuOpen(!menuOpen)}
+          >
+            <span className="block w-8 h-1 bg-gray-200 mb-1 rounded"></span>
+            <span className="block w-8 h-1 bg-gray-200 mb-1 rounded"></span>
+            <span className="block w-8 h-1 bg-gray-200 rounded"></span>
+          </button>
         </div>
-        
-        <div className="flex flex-col w-full items-center gap-4 md:hidden mb-8">
-          <a href="#services" className="text-black text-4xl font-bold hover:text-blue-600 transition">Services</a>
-          <a href="#portfolio" className="text-black text-4xl font-bold hover:text-blue-600 transition">Case Studies</a>
-          <a href="#how" className="text-black text-4xl font-bold hover:text-blue-600 transition">How it works?</a>
-          <a href="#about" className="text-black text-4xl font-bold hover:text-blue-600 transition">About Me</a>
-          <a href="#contact" className="text-black text-4xl font-bold hover:text-blue-600 transition">Let's Talk</a>
+
+      </div>
+      {/* Mobile Menu */}
+      {menuOpen && (
+        <div className="md:hidden absolute top-20 left-0 w-full bg-[#E46C6C] z-50 flex flex-col items-center gap-4 py-8 shadow-lg animate-fade-in">
+          <a href="#services" className="text-black text-2xl font-bold hover:text-blue-600 transition">Services</a>
+          <a href="#portfolio" className="text-black text-2xl font-bold hover:text-blue-600 transition">Case Studies</a>
+          <a href="#how" className="text-black text-2xl font-bold hover:text-blue-600 transition">How it works?</a>
+          <a href="#about" className="text-black text-2xl font-bold hover:text-blue-600 transition">About Me</a>
+          <a href="#contact" className="text-black text-2xl font-bold hover:text-blue-600 transition">Let's Talk</a>
+        </div>
+      )}
+      {/* Main Content */}
+      <div className="flex-1 w-full flex flex-col md:flex-row items-center justify-between relative z-30 px-6 pt-12 md:pt-24 max-w-7xl mx-auto">
+        {/* Left: Text */}
+        <div className="flex-1 flex flex-col items-start justify-center md:pr-8">
+          <h2 className="text-3xl xs:text-4xl sm:text-5xl md:text-6xl font-bold italic text-black mb-4 leading-tight" style={{ fontFamily: 'Helvetica,Arial,sans-serif' }}>
+            <span className="font-bold">DevOps consulting for<br />businesses ready to <span className="bg-[#2895E5] px-2">level up</span></span>
+          </h2>
+          <div className="text-lg xs:text-xl md:text-2xl text-black font-normal mb-8">
+            Bridging Development and Operations<br />for Over 20 Years
+          </div>
+        </div>
+        {/* Right: Mario Image with accent for mobile */}
+        <div className="flex-1 flex items-end justify-center relative w-full md:w-auto mt-8 md:mt-0">
+          {/* Blue accent blocks for mobile */}
+          <div className="absolute hidden xs:block md:hidden left-1/2 -translate-x-1/2 top-8 z-10" aria-hidden>
+            <div className="w-32 h-8 bg-[#2895E5] mb-2 rounded"></div>
+            <div className="w-24 h-8 bg-[#2895E5] ml-8 rounded"></div>
+          </div>
+          <Image
+            src="/Mario-Hero.webp"
+            alt="Mario Vejlupek"
+            width={420}
+            height={520}
+            className="relative z-20 grayscale w-full max-w-xs md:max-w-md lg:max-w-lg h-auto object-cover object-top rounded-md md:ml-auto md:mr-0 mx-auto"
+            priority
+          />
         </div>
       </div>
 
