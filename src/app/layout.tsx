@@ -12,7 +12,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="cs">
+    <html lang="en">
       <head>
       </head>
       <body className="relative min-h-screen overflow-x-hidden">
