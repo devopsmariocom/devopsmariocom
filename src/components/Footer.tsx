@@ -13,7 +13,7 @@ export default function Footer() {
               loading="lazy"
               width={200}
               height={80}
-              className="h-14 w-auto mr-10 ml-10"
+              className="h-10 w-auto mr-4 ml-4 sm:h-14 sm:mr-10 sm:ml-10"
             />
           </div>
           <div className="mt-24 text-sm text-gray-300">© 2025 Mario Vejlupek</div>
