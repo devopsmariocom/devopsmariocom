@@ -1,23 +1,25 @@
-import type { Metadata } from 'next'
-import './globals.css'
+import type { Metadata } from "next";
+import "./globals.css";
 
 export const metadata: Metadata = {
-  title: 'DevOpsMario',
-  description: 'DevOps consulting for businesses ready to level up',
-}
+  title: "DevOpsMario",
+  description: "DevOps consulting for businesses ready to level up",
+};
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <head>
-      </head>
-      <body className="relative min-h-screen overflow-x-hidden">
+    <html lang="en" data-oid="vfqnnj5">
+      <head data-oid="slycmbz"></head>
+      <body
+        className="relative min-h-screen overflow-x-hidden"
+        data-oid="yd24mxz"
+      >
         {children}
       </body>
     </html>
-  )
-} 
+  );
+}
