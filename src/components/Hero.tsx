@@ -45,35 +45,31 @@ export default function Hero() {
         </div>
         {/* Main Content */}
         <div
-          className="flex-1 flex flex-row items-stretch justify-between relative z-30 px-10 max-w-[1600px] mx-auto w-full"
+          className="flex-1 flex flex-row items-center justify-between relative z-30 px-10 max-w-[1600px] mx-auto w-full"
           data-oid="sukenay"
         >
-          {/* Společný kontejner pro logo a obrázek */}
-          <div className="" data-oid="f-s2ddc">
-            <Image
-              src="/DevOpsMario-Hero-Logo.svg"
-              alt="DevOpsMario Logo"
-              width={600}
-              height={180}
-              className="h-[421px] w-[1081px] absolute"
-              priority
-              data-oid="9lcx-9r"
-            />
+          {/* Left side - Logo and Text */}
+          <div
+            className="flex flex-col justify-center flex-1"
+            data-oid="f-s2ddc"
+          >
+            {/* Large DevOpsMario Logo */}
+            <div className="mb-8" data-oid="3ihl4o6">
+              <Image
+                src="/DevOpsMario-Hero-Logo.svg"
+                alt="DevOpsMario Logo"
+                width={800}
+                height={240}
+                className="max-w-[800px] h-auto w-[1156px]"
+                priority
+                data-oid="9lcx-9r"
+              />
+            </div>
 
-            <Image
-              src="/Mario-Hero.webp"
-              alt="Mario Vejlupek"
-              width={517}
-              height={700}
-              className="absolute left-[755px] top-[150px]"
-              priority
-              data-oid="7.gm9xb"
-              key="olk-uP0T"
-            />
-
-            <div className="mt-2 mb-8" data-oid="d.ppado">
+            {/* Text Content */}
+            <div className="max-w-[600px]" data-oid="d.ppado">
               <div
-                className="text-2xl md:text-3xl lg:text-4xl font-bold italic text-black mb-2 text-left absolute left-[66px] top-[512px]"
+                className="text-3xl lg:text-4xl xl:text-5xl font-bold italic text-black mb-6 leading-tight"
                 style={{ fontFamily: "Helvetica,Arial,sans-serif" }}
                 data-oid="_3vfhn1"
               >
@@ -82,7 +78,7 @@ export default function Hero() {
                 businesses ready to level up
               </div>
               <div
-                className="text-base md:text-lg text-black font-normal text-left"
+                className="text-lg lg:text-xl text-black font-normal leading-relaxed"
                 data-oid="hfjkh6w"
                 key="olk-WV-_"
               >
@@ -92,7 +88,22 @@ export default function Hero() {
               </div>
             </div>
           </div>
+
+          {/* Right side - Mario's Photo */}
+          <div className="flex-shrink-0 ml-8" data-oid="82nb42o">
+            <Image
+              src="/Mario-Hero.webp"
+              alt="Mario Vejlupek"
+              width={517}
+              height={700}
+              className="w-auto h-[600px] object-cover object-top"
+              priority
+              data-oid="7.gm9xb"
+              key="olk-uP0T"
+            />
+          </div>
         </div>
+        =======
       </div>
       {/* Mobile View */}
       <div
