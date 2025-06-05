@@ -20,7 +20,7 @@ export default function Hero() {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
     <section
-      className="relative min-h-screen w-full overflow-hidden flex flex-col bg-[#E46C6C]"
+      className="relative h-screen w-full overflow-hidden flex flex-col bg-[#E46C6C]"
       data-oid="myrc2vy"
     >
       {/* Desktop View */}
