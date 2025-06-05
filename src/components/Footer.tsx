@@ -111,18 +111,6 @@ export default function Footer() {
               VAT ID CZ 17452899
             </div>
           </div>
-          <div data-oid="h1gqbh-">
-            <div className="font-bold mb-1" data-oid="oq6m4-s">
-              CONTACT ADDRESS
-            </div>
-            <div data-oid="i80fh4.">
-              Mario Vejlupek
-              <br data-oid="8s671h3" />
-              tř. Masarykova 128, 698 01 Veselí and Moravou
-              <br data-oid="d872wem" />
-              Czech republic
-            </div>
-          </div>
         </div>
       </div>
     </footer>

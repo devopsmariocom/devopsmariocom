@@ -24,7 +24,10 @@ export default function Hero() {
       data-oid="myrc2vy"
     >
       {/* Desktop View */}
-      <div className="flex flex-col h-screen" data-oid="z4y9yms">
+      <div
+        className="flex flex-col h-screen hidden sm:block"
+        data-oid="z4y9yms"
+      >
         {/* Top Bar */}
         <div className="h-20" data-oid="g4jvwn1">
           <Image
@@ -96,7 +99,7 @@ export default function Hero() {
       >
         {/* Top Bar */}
         <div
-          className="w-full flex items-center justify-between px-6 pt-8 z-40 relative"
+          className="w-full flex items-center justify-between px-6 pt-8 z-40 relative text-[20px]"
           data-oid="pxtxltg"
         >
           <Image
@@ -176,9 +179,9 @@ export default function Hero() {
           className="flex-1 flex flex-col items-center justify-center px-6 pt-12 w-full"
           data-oid="2qpas4w"
         >
-          <div className="mt-2 mb-8 w-full" data-oid="v5x-qo4">
+          <div className="mt-2 mb-8 w-full text-[30px]" data-oid="v5x-qo4">
             <div
-              className="text-2xl xs:text-3xl font-bold italic text-black mb-2 text-left"
+              className="xs:text-3xl font-bold italic mb-2 text-left text-[NaNpx] text-[25px]"
               style={{ fontFamily: "Helvetica,Arial,sans-serif" }}
               data-oid="lkdgmri"
             >
@@ -187,7 +190,7 @@ export default function Hero() {
               businesses ready to level up
             </div>
             <div
-              className="text-base xs:text-lg text-black font-normal text-left"
+              className="xs:text-lg font-normal text-left text-[20px]"
               data-oid="cwafma7"
             >
               Bridging Development and Operations
@@ -197,23 +200,9 @@ export default function Hero() {
           </div>
           {/* Blue accent blocks for mobile */}
           <div
-            className="relative w-full flex flex-col items-center"
+            className="flex-shrink-0 z-30 bottom flex items-end relative top-auto right-auto bottom-auto left-auto mt-auto"
             data-oid="lt-b7:8"
           >
-            <div
-              className="absolute left-1/2 -translate-x-1/2 top-8 z-10"
-              aria-hidden
-              data-oid="st_yd_7"
-            >
-              <div
-                className="w-32 h-8 bg-[#2895E5] mb-2 rounded"
-                data-oid="xwxo36_"
-              ></div>
-              <div
-                className="w-24 h-8 bg-[#2895E5] ml-8 rounded"
-                data-oid="vnt.3_b"
-              ></div>
-            </div>
             <Image
               src="/Mario-Hero.webp"
               alt="Mario Vejlupek"
