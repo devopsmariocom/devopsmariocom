@@ -5,7 +5,7 @@ export default function Navigation() {
       data-oid="e5qo_dl"
     >
       <div
-        className="nav-links flex space-x-12 text-black text-base font-normal justify-end"
+        className="nav-links flex space-x-12 text-black font-normal justify-end h-[125px] w-[1844px] text-[25px] items-center pr-[80px]"
         data-oid="_4pfh8n"
       >
         <a href="#services" data-oid="tqife0_">

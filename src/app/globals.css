@@ -19,10 +19,10 @@ body {
 }
 
 .bottom-dots {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  /* position: absolute; */
+  /* left: 0; */
+  /* right: 0; */
+  /* bottom: 0px; */
   width: 100vw;
   background: #232323;
   display: flex;

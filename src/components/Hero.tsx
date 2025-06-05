@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Navigation from "./Navigation";
 import { useState } from "react";
+import BottomDotsBar from "./BottomDotsBar";
 
 const techIcons = [
   { src: "/kubernetes.svg", alt: "Kubernetes" },
@@ -23,15 +24,9 @@ export default function Hero() {
       data-oid="myrc2vy"
     >
       {/* Desktop View */}
-      <div
-        className="hidden md:flex flex-col min-h-screen w-full"
-        data-oid="z4y9yms"
-      >
+      <div className="flex flex-col h-screen" data-oid="z4y9yms">
         {/* Top Bar */}
-        <div
-          className="w-full flex items-center justify-between px-10 pt-10 z-50 relative"
-          data-oid="g4jvwn1"
-        >
+        <div className="h-20" data-oid="g4jvwn1">
           <Image
             src="/DevOpsMario-Hero-Logo.svg"
             alt="DevOpsMario Logo"
@@ -44,57 +39,36 @@ export default function Hero() {
           <Navigation data-oid="31bc8yh" />
         </div>
         {/* Main Content */}
-        <div
-          className="flex-1 flex flex-row items-center justify-between relative z-30 px-10 max-w-[1600px] mx-auto w-full"
-          data-oid="sukenay"
-        >
+        <div className="flex-1 bg-[#00000000]" data-oid="sukenay">
           {/* Large DevOpsMario Logo - Background */}
           <div
-            className="absolute inset-0 items-center justify-center z-10 block m-[60px]"
+            className="absolute left-0 z-20 p-4 mt-[130px] mr-[80px] ml-[80px]"
             data-oid="logo-bg"
           >
             <Image
               src="/DevOpsMario-Hero-Logo.svg"
               alt="DevOpsMario Logo"
-              width={1200}
-              height={360}
-              className="w-full max-w-[1200px] h-auto opacity-90 flex items-start"
+              width={1674}
+              height={260}
               priority
               data-oid="9lcx-9r"
+              key="olk-5jof"
+              className="w-[1674px]"
             />
-          </div>
 
-          {/* Left side - Text Content */}
-          <div
-            className="flex flex-col justify-center flex-1 relative z-20"
-            data-oid="f-s2ddc"
-          >
-            {/* Text Content */}
-            <div className="max-w-[600px]" data-oid="d.ppado">
-              <div
-                className="text-3xl lg:text-4xl xl:text-5xl font-bold italic mb-6 leading-tight ml-[20px] w-[665px] text-[#333333]"
-                style={{ fontFamily: "Helvetica,Arial,sans-serif" }}
-                data-oid="_3vfhn1"
-              >
-                DevOps consulting for
-                <br data-oid="qcwgu74" />
-                businesses ready to level up
-              </div>
-              <div
-                className="text-lg lg:text-xl font-normal leading-relaxed ml-[20px] text-[#333333]"
-                data-oid="hfjkh6w"
-                key="olk-WV-_"
-              >
-                Bridging Development and Operations
-                <br data-oid="._nyxds" />
-                for Over 20 Years
-              </div>
-            </div>
+            <p
+              className="text-3xl lg:text-4xl xl:text-5xl font-bold italic mb-6 leading-tight ml-[20px] w-[665px] text-[#333333]"
+              data-oid=":jlowdd"
+            >
+              DevOps consulting for
+              <br data-oid="qcwgu74" />
+              businesses ready to level up
+            </p>
           </div>
 
           {/* Right side - Mario's Photo */}
           <div
-            className="flex-shrink-0 ml-8 z-30 absolute justify-start block w-[586px] h-[712px] right-[73px] left-[720px] top-[138px] mt-0"
+            className="flex-shrink-0 ml-8 z-30 absolute justify-start block right-[73px] left-[720px] top-[138px] mt-0 w-[978px] h-[1024px]"
             data-oid="82nb42o"
           >
             <Image
@@ -102,11 +76,16 @@ export default function Hero() {
               alt="Mario Vejlupek"
               width={517}
               height={700}
-              className="object-cover object-top w-[571px] relative top-auto right-auto bottom-auto left-auto"
+              className="object-cover object-top right-auto bottom-auto flex items-end justify-end absolute h-[1100px] left-[230px] top-[24px] w-[785px]"
               priority
               data-oid="7.gm9xb"
               key="olk-uP0T"
             />
+          </div>
+
+          {/* Bottom Dots Bar */}
+          <div className="absolute bottom-0 w-full z-50" data-oid="6zx3782">
+            <BottomDotsBar data-oid="cffd1zn" />
           </div>
         </div>
       </div>
@@ -245,26 +224,6 @@ export default function Hero() {
               data-oid="m0v3w5i"
             />
           </div>
-        </div>
-      </div>
-      {/* Bottom Dots Bar */}
-      <div className="bottom-dots" data-oid="mbzry8z">
-        <div className="icon-carousel" data-oid="1o5v0vo">
-          {[...Array(4)].map((_, groupIndex) => (
-            <div key={groupIndex} className="icon-group" data-oid="52pvb3p">
-              {techIcons.map((icon, index) => (
-                <Image
-                  key={`${groupIndex}-${index}`}
-                  src={icon.src}
-                  alt={icon.alt}
-                  width={40}
-                  height={40}
-                  className="tech-icon"
-                  data-oid="yi3yhp-"
-                />
-              ))}
-            </div>
-          ))}
         </div>
       </div>
     </section>

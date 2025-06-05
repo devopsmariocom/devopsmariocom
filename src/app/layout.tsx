@@ -15,7 +15,7 @@ export default function RootLayout({
     <html lang="en" data-oid="vfqnnj5">
       <head data-oid="slycmbz"></head>
       <body
-        className="relative min-h-screen overflow-x-hidden"
+        className="relative min-h-screen overflow-x-hidden h-[529px]"
         data-oid="yd24mxz"
       >
         {children}
