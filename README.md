@@ -1,46 +1,20 @@
-# DevOpsMario Website
+# 👋 Hi, I’m **Mario Vejlupek** — _aka_ **DevOpsMario**
 
-This is the official website for DevOpsMario, built with Next.js and Tailwind CSS.
+🎯 **DevOps Consultant | Infra Architect | Educator**  
+With over **20 years of hands-on experience**, I help teams build scalable, secure, and cloud-native systems. My expertise includes:
 
-## Getting Started
+- 🐳 Kubernetes, Docker, Terraform, CI/CD
+- ☁️ Azure, AWS, hybrid cloud strategies
+- 🔐 DevSecOps, monitoring & observability
+- 👥 Training engineers and mentoring across time zones
+- 🧱 Teaching kids to code with LEGO robots
 
-First, install the dependencies:
+🚀 Former developer, meetup founder, and speaker. I turn complex infrastructure into empowering developer platforms.
 
-```bash
-npm install
-# or
-yarn install
-```
+📍 Based in **Prague / Moravian Slovakia**  
+🌐 [devopsmario.com](https://devopsmario.com)  
+💼 [LinkedIn](https://www.linkedin.com/in/vejlupek)
 
-Then, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-## Building for Production
-
-To build the static site for production:
-
-```bash
-npm run build
-# or
-yarn build
-```
-
-The static files will be generated in the `out` directory.
-
-## Deployment
-
-The site is configured for static export, so it can be deployed to any static hosting service like Vercel, Netlify, or GitHub Pages.
-
-## Technologies Used
-
-- Next.js 14
-- React 18
-- Tailwind CSS
-- TypeScript
+> _Let’s build something great together._
