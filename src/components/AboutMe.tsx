@@ -8,7 +8,7 @@ export default function AboutMe() {
       data-oid="63vvg6d"
     >
       <div
-        className="flex w-full max-w-[1600px] mx-auto flex-col md:flex-row items-center md:items-stretch justify-between px-8 gap-8"
+        className="flex w-full mx-auto flex-col md:flex-row items-center md:items-stretch justify-between px-8 gap-8"
         data-oid="pott_7c"
       >
         <div
@@ -44,27 +44,33 @@ export default function AboutMe() {
           className="flex-1 relative flex items-end justify-center min-h-[480px]"
           data-oid="a_iyi-3"
         >
-          <Image
-            src="/Me-About_Me.webp"
-            alt="Mario Vejlupek"
-            width={400}
-            height={400}
-            className="w-full h-full object-cover"
-            sizes="(max-width: 768px) 100vw, 400px"
-            quality={90}
-            data-oid="d.9xmqu"
-          />
+          <div
+            className="relative w-full h-full max-h-[480px]"
+            data-oid="9s08yuu"
+          >
 
-          <Image
-            src="/Computer_Mess-About_Me.webp"
-            alt="Computer with code"
-            width={600}
-            height={400}
-            className="w-full h-full object-cover"
-            sizes="(max-width: 768px) 100vw, 600px"
-            quality={90}
-            data-oid="1o71rx7"
-          />
+            <Image
+              src="/Me-About_Me.webp"
+              alt="Mario Vejlupek"
+              width={400}
+              height={400}
+              className="w-full h-full object-cover"
+              sizes="(max-width: 768px) 100vw, 400px"
+              quality={90}
+              data-oid="d.9xmqu"
+            />
+
+            <Image
+              src="/Computer_Mess-About_Me.webp"
+              alt="Computer with code"
+              width={600}
+              height={400}
+              className="w-full h-full object-cover"
+              sizes="(max-width: 768px) 100vw, 600px"
+              quality={90}
+              data-oid="1o71rx7"
+            />
+          </div>
 
           <div
             className="absolute left-0 bottom-12 w-full flex flex-col items-end z-30"

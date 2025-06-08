@@ -166,7 +166,7 @@ export default function Hero() {
               About Me
             </a>
             <a
-              href="#contact"
+              href="#lets-chat"
               className="text-black text-2xl font-bold hover:text-blue-600 transition"
               data-oid="c64e7w7"
             >

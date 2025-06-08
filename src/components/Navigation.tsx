@@ -20,7 +20,7 @@ export default function Navigation() {
         <a href="#about" data-oid="ej2ly5u">
           About Me
         </a>
-        <a href="#contact" data-oid="iz:oirp">
+        <a href="#lets-chat" data-oid="iz:oirp">
           Let's Talk
         </a>
       </div>

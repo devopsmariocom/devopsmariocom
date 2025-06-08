@@ -78,6 +78,7 @@ export default function CaseStudies() {
         <div
           className="flex flex-col items-center md:items-start justify-end mt-4"
           data-oid="1-23m2o"
+          id="lets-chat"
         >
           <div
             className="text-3xl md:text-4xl font-bold italic text-gray-800 mb-8 text-center md:text-left"
