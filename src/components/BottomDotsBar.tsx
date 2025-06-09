@@ -13,10 +13,10 @@ const techIcons = [
 
 export default function BottomDotsBar() {
   return (
-    <div className="bottom-dots" data-oid="d:39fm8">
-      <div className="icon-carousel border-[#00000000]" data-oid="caxa1yx">
+    <div className="bottom-dots" data-oid=":oeyn1w">
+      <div className="icon-carousel border-[#00000000]" data-oid="rh04hco">
         {[...Array(4)].map((_, groupIndex) => (
-          <div key={groupIndex} className="icon-group" data-oid="vju.:d6">
+          <div key={groupIndex} className="icon-group" data-oid="eetuunw">
             {techIcons.map((icon, index) => (
               <Image
                 key={`${groupIndex}-${index}`}
@@ -25,7 +25,7 @@ export default function BottomDotsBar() {
                 width={40}
                 height={40}
                 className="tech-icon"
-                data-oid="-xukcfv"
+                data-oid="4klzd63"
               />
             ))}
           </div>

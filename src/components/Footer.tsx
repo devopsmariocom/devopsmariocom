@@ -9,17 +9,17 @@ export default function Footer() {
         background:
           "#393939 url('/Pipelines-Tail.svg') left center no-repeat; background-size: auto 80%",
       }}
-      data-oid="wow:gcq"
+      data-oid="bcptgew"
     >
       <div
         className="max-w-[1800px] mx-auto flex flex-col md:flex-row justify-between items-start gap-8 px-8"
-        data-oid=":d.lobn"
+        data-oid=".bus2uj"
       >
         <div
           className="flex-1 flex flex-col items-start min-w-[320px] relative z-10"
-          data-oid="h.1p68e"
+          data-oid="ke5xcr0"
         >
-          <div className="flex items-center mb-8" data-oid="6pai4vz">
+          <div className="flex items-center mb-8" data-oid="a_0:y0:">
             <Image
               src="/DevOpsMario-Logo-Tail.svg"
               alt="DevOpsMario Logo"
@@ -27,66 +27,66 @@ export default function Footer() {
               width={200}
               height={80}
               className="h-10 w-auto mr-4 ml-4 sm:h-14 sm:mr-10 sm:ml-10"
-              data-oid="x.s9745"
+              data-oid="rbae4ha"
             />
           </div>
-          <div className="mt-24 text-sm text-gray-300" data-oid="20:nl3d">
+          <div className="mt-24 text-sm text-gray-300" data-oid="uj.rj00">
             © 2025 Mario Vejlupek
           </div>
         </div>
 
         <div
           className="flex-1 flex flex-col items-start min-w-[320px] z-10"
-          data-oid="fdbz:uh"
+          data-oid="lbsypvw"
         >
           <div
             className="text-4xl font-bold italic text-gray-400 mb-6"
             style={{ fontFamily: "Helvetica,Arial,sans-serif" }}
-            data-oid="50fp6q1"
+            data-oid="efush35"
           >
             Let's Stay in Touch
           </div>
-          <div className="mb-2" data-oid="gf.np60">
-            <span className="font-bold text-white" data-oid="67eyjx2">
+          <div className="mb-2" data-oid=":_g57w6">
+            <span className="font-bold text-white" data-oid="k1syw4c">
               Mario Vejlupek
             </span>
           </div>
-          <div className="mb-2" data-oid="68w4js4">
+          <div className="mb-2" data-oid="-.bgfk5">
             DevOps Consultant
           </div>
-          <div className="mb-4" data-oid="id2s5_s">
+          <div className="mb-4" data-oid=":ilb-sk">
             Timezone: Central Europe / Prague
           </div>
-          <div className="mb-2" data-oid="yfsukie">
+          <div className="mb-2" data-oid="13_j-qj">
             EMAIL{" "}
             <a
               href="mailto:hello@devopsmario.com"
               className="underline"
-              data-oid="ue.z.71"
+              data-oid="p6:9g8a"
             >
               hello@devopsmario.com
             </a>
           </div>
-          <div className="mb-2" data-oid="-dphuva">
+          <div className="mb-2" data-oid=":etq.uo">
             LINKS{" "}
             <a
               href="https://www.linkedin.com/company/devopsmario/"
               className="underline"
-              data-oid="ihlbi-_"
+              data-oid="ubrmf3-"
             >
               [LinkedIn]
             </a>{" "}
             <a
               href="https://github.com/devopsmariocom"
               className="underline"
-              data-oid="u8pxz9z"
+              data-oid="_rmsm97"
             >
               [GitHub]
             </a>{" "}
             <a
               href="https://calendar.app.google/8g9KQJMnCWqejdXn6"
               className="underline"
-              data-oid="z6-36i3"
+              data-oid="vcroixa"
             >
               [Book a Call]
             </a>
@@ -95,19 +95,19 @@ export default function Footer() {
 
         <div
           className="flex-1 flex flex-col items-start min-w-[320px] z-10"
-          data-oid="hm:etgc"
+          data-oid="4g44u55"
         >
-          <div className="mb-6" data-oid="f0ei7c6">
-            <div className="font-bold mb-1" data-oid="pqazi7z">
+          <div className="mb-6" data-oid="8w7q9hb">
+            <div className="font-bold mb-1" data-oid="lq9wknf">
               BILLING ADDRESS
             </div>
-            <div data-oid="c:tv3fw">
+            <div data-oid="0k4x1eo">
               Vejlupek s.r.o.
-              <br data-oid="ri4cv.6" />
+              <br data-oid="i5tly2n" />
               Kurzova 2222/16, 155 00 Prague
-              <br data-oid="2.lv40d" />
+              <br data-oid="04_x4.5" />
               Czech republic
-              <br data-oid="xvqnky9" />
+              <br data-oid="1na501d" />
               VAT ID CZ 17452899
             </div>
           </div>
