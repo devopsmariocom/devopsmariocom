@@ -12,11 +12,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" data-oid="pa:-xpv">
-      <head data-oid="4:pna89"></head>
+    <html lang="en" data-oid="ogyx5u7">
+      <head data-oid="3potzrg"></head>
       <body
         className="relative min-h-screen overflow-x-hidden h-[529px]"
-        data-oid="gghw949"
+        data-oid="g51a8uz"
       >
         {children}
       </body>

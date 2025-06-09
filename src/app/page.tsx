@@ -9,14 +9,14 @@ import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <main data-oid="s79a:-f">
+    <main data-oid="gyvgtn3">
       {/* <Navigation /> */}
-      <Hero data-oid="j67wcfh" />
-      <Services data-oid="-3ex_pg" />
-      <CaseStudies data-oid="5hcyl15" />
-      <HowItWorks data-oid="h2cin_j" />
-      <AboutMe data-oid="7mnfp_b" />
-      <Footer data-oid="k6xuc6k" />
+      <Hero data-oid="xfd3f9g" />
+      <Services data-oid="2s.ubqs" />
+      <CaseStudies data-oid="9y-ckq9" />
+      <HowItWorks data-oid="fzgwtm1" />
+      <AboutMe data-oid="c7v7hkw" />
+      <Footer data-oid="tuiy.ei" />
     </main>
   );
 }

@@ -32,7 +32,6 @@ export default function HowItWorks() {
     <section
       id="how"
       className="w-full min-h-[700px] py-24 px-0 flex flex-col items-center justify-center bg-[#E46C6C]"
-      data-oid="66pzvch"
     >
       <Image
         src="/Logo-How_It_Works.svg"
@@ -41,51 +40,35 @@ export default function HowItWorks() {
         width={320}
         height={80}
         className="mx-auto mb-2 w-[260px] md:w-[320px]"
-        data-oid="a14b8uk"
       />
 
       <h2
         className="text-6xl md:text-8xl font-bold italic text-white text-center mb-16"
         style={{ fontFamily: "Helvetica,Arial,sans-serif" }}
-        data-oid="rsichl6"
       >
         How It Works
       </h2>
 
-      <div
-        className="w-full max-w-[1400px] grid grid-cols-1 md:grid-cols-4 gap-12 mb-20 px-8"
-        data-oid="boq5o5q"
-      >
+      <div className="w-full max-w-[1400px] grid grid-cols-1 md:grid-cols-4 gap-12 mb-20 px-8">
         {steps.map((step, index) => (
-          <div key={index} className="text-white text-lg" data-oid="afdhwq_">
-            <div className="font-bold italic text-2xl mb-2" data-oid="hht13:m">
-              {step.title}
-            </div>
-            <div className="mb-4" data-oid="c5kdjuf">
-              {step.description}
-            </div>
-            <div className="mt-2" data-oid="hm3m7bn">
-              Outcome: {step.outcome}
-            </div>
+          <div key={index} className="text-white text-lg">
+            <div className="font-bold italic text-2xl mb-2">{step.title}</div>
+            <div className="mb-4">{step.description}</div>
+            <div className="mt-2">Outcome: {step.outcome}</div>
           </div>
         ))}
       </div>
 
-      <div
-        className="w-full flex flex-col items-center justify-center mt-8"
-        data-oid="s_3aapv"
-      >
+      <div className="w-full flex flex-col items-center justify-center mt-8">
         <div
           className="text-4xl md:text-5xl font-bold italic text-white text-center mb-8"
           style={{ fontFamily: "Helvetica,Arial,sans-serif" }}
-          data-oid="36d764w"
         >
           Want to know how I can help you in particular?
         </div>
         <a
           href="https://calendar.app.google/8g9KQJMnCWqejdXn6"
           className="inline-block bg-white text-black text-xl px-12 py-4 rounded shadow hover:bg-gray-100 transition font-semibold"
-          data-oid="e-a5xwb"
         >
           BOOK A CALL
         </a>
