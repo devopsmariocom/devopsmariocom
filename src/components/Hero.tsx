@@ -28,8 +28,19 @@ export default function Hero() {
         </div>
         {/* Main Content */}
         <div className="flex-1 bg-[#00000000]">
+
+          <Image
+                src="/Pipeline-Hero.svg"
+                alt="Pipelines"
+                width={1517}
+                height={1000}
+                className="inline-block absolute top-100 left-0 right-0 z-10 w-full"
+                style={{ marginTop: "z-index: -1 !important; margin-top: 300px !important" }}
+                priority
+              />
+
           {/* Large DevOpsMario Logo - Background */}
-          <div className="absolute left-0 z-20 p-4 mt-[130px] mr-[80px] ml-[80px]">
+          <div className="absolute left-0 z-20 p-4 mt-[30px] mr-[80px] ml-[80px]">
             <Image
               src="/DevOpsMario-Hero-Logo.svg"
               alt="DevOpsMario Logo"
@@ -58,15 +69,18 @@ export default function Hero() {
 
           {/* Right side - Mario's Photo */}
           <div className="flex-shrink-0 ml-8 z-30 absolute justify-start block right-0 bottom-[110px]">
+
             <Image
               src="/Mario-Hero.webp"
               alt="Mario Vejlupek"
               width={517}
               height={700}
-              className="inline-block h-auto"
+              className="inline-block h-auto z-20"
               priority
             />
           </div>
+
+
 
           {/* Bottom Dots Bar */}
           <div className="absolute bottom-0 w-full z-50">
@@ -133,6 +147,17 @@ export default function Hero() {
         )}
         {/* Main Content */}
         <div className="flex-1 flex flex-col items-center justify-center px-6 pt-12 w-full">
+
+          <Image
+                  src="/Pipeline-Hero.svg"
+                  alt="Pipelines"
+                  width={1517}
+                  height={1000}
+                  className="inline-block absolute top-100 left-0 right-0 z-10 w-full"
+                  style={{ marginTop: "z-index: -1 !important; margin-top: 300px !important" }}
+                  priority
+                />
+
           <div className="mt-2 mb-8 w-full text-[30px]">
             <div
               className="xs:text-3xl font-bold italic mb-2 text-left text-[NaNpx] text-[25px]"
