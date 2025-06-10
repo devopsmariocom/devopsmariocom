@@ -32,12 +32,12 @@ export default function Services() {
   return (
     <section
       id="services"
-      className="w-full min-h-[600px] py-24 px-0 flex items-stretch justify-center border-t border-gray-200 bg-[#E4E4E4]"
+      className="w-full min-h-[600px] px-0 flex items-stretch justify-center border-t border-gray-200 bg-[#E4E4E4]"
     >
       <div className="flex flex-col md:flex-row w-full max-w-[1800px] mx-auto">
         <div
           id="services-content"
-          className="order-1 md:order-2 flex-1 flex flex-col justify-center px-6 md:pl-12 md:pr-8"
+          className="order-1 md:order-2 flex-1 flex flex-col justify-center px-6 md:pl-12 md:pr-8 my-24"
         >
           <h2
             className="text-5xl xs:text-6xl sm:text-7xl font-bold italic text-gray-800 mb-8 mt-2 md:mb-12 md:mt-2"
