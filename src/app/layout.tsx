@@ -3,16 +3,19 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "DevOpsMario — Power Up Your Infrastructure",
-  description: "Scalable systems, automated workflows, and real-world DevOps mentoring. Book your free 30-minute session today",
+  description:
+    "Scalable systems, automated workflows, and real-world DevOps mentoring. Book your free 30-minute session today",
   openGraph: {
     title: "DevOpsMario — Power Up Your Infrastructure",
-    description: "Scalable systems, automated workflows, and real-world DevOps mentoring. Book your free 30-minute session today.",
+    description:
+      "Scalable systems, automated workflows, and real-world DevOps mentoring. Book your free 30-minute session today.",
     images: ["https://devopsmario.com/preview.jpg"],
   },
   twitter: {
     card: "summary_large_image",
     title: "DevOpsMario — Power Up Your Infrastructure",
-    description: "Scalable systems, automated workflows, and real-world DevOps mentoring. Book your free 30-minute session today.",
+    description:
+      "Scalable systems, automated workflows, and real-world DevOps mentoring. Book your free 30-minute session today.",
     images: ["https://devopsmario.com/preview.jpg"],
   },
 };

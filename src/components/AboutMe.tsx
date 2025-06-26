@@ -26,8 +26,7 @@ export default function AboutMe() {
             I'm{" "}
             <span className="font-bold" data-oid="mgfeun4">
               Mario Vejlupek
-            </span>
-            {" "}
+            </span>{" "}
             — DevOps consultant,
             <br data-oid="prbixil" />
             former developer, meetup founder, and speaker.
@@ -39,20 +38,24 @@ export default function AboutMe() {
             enterprises.
           </div>
           <div className="text-lg text-gray-700 mb-8" data-oid="p48473r">
-            I’ve trained more than 100 engineers in <b>Kubernetes</b> fundamentals, led
-            DevOps transitions from legacy systems to modern infrastructure, and
-            helped cross-functional teams work better together through smarter
-            tooling and clearer communication. I also founded the ngParty meetup
-            group, which has grown into a space for developers and operations
-            folks to learn and share.
+            I’ve trained more than 100 engineers in{" "}
+            <b data-oid="0p8lm2f">Kubernetes</b> fundamentals, led DevOps
+            transitions from legacy systems to modern infrastructure, and helped
+            cross-functional teams work better together through smarter tooling
+            and clearer communication. I also founded the ngParty meetup group,
+            which has grown into a space for developers and operations folks to
+            learn and share.
           </div>
           <div className="text-lg text-gray-700 mb-8" data-oid="6asdojs">
-            Beyond work, I bring tech to classrooms — teaching kids programming, robotics, and problem-solving using LEGO and Minecraft, and creative challenges. 
-            Helping the next generation understand how things work is deeply rewarding and keeps my own curiosity sharp.
+            Beyond work, I bring tech to classrooms — teaching kids programming,
+            robotics, and problem-solving using LEGO and Minecraft, and creative
+            challenges. Helping the next generation understand how things work
+            is deeply rewarding and keeps my own curiosity sharp.
           </div>
-          <div className="text-lg text-gray-700 mb-8">
-            My philosophy is simple: build infrastructure that gets out of the way. Automate what’s boring. 
-            Share what you learn. And never lose sight of the human side of tech.
+          <div className="text-lg text-gray-700 mb-8" data-oid="8_:0o-s">
+            My philosophy is simple: build infrastructure that gets out of the
+            way. Automate what’s boring. Share what you learn. And never lose
+            sight of the human side of tech.
           </div>
         </div>
 

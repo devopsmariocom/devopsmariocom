@@ -1,0 +1,62 @@
+{
+  "fill" : {
+    "automatic-gradient" : "display-p3:0.96611,0.91463,0.92172,1.00000"
+  },
+  "groups" : [
+    {
+      "layers" : [
+        {
+          "glass" : false,
+          "hidden" : true,
+          "image-name" : "Favicon.svg",
+          "name" : "Favicon",
+          "position" : {
+            "scale" : 1.53,
+            "translation-in-points" : [
+              -10.129923621397571,
+              22.14926382511927
+            ]
+          }
+        },
+        {
+          "glass" : false,
+          "image-name" : "Favicon-D.svg",
+          "name" : "Favicon-D",
+          "position" : {
+            "scale" : 1.53,
+            "translation-in-points" : [
+              -222.7109375,
+              1.3515625
+            ]
+          }
+        },
+        {
+          "glass" : false,
+          "image-name" : "Favicon-M.svg",
+          "name" : "Favicon-M",
+          "position" : {
+            "scale" : 1.53,
+            "translation-in-points" : [
+              145.1015625,
+              -3.390625
+            ]
+          }
+        }
+      ],
+      "shadow" : {
+        "kind" : "neutral",
+        "opacity" : 0.5
+      },
+      "translucency" : {
+        "enabled" : true,
+        "value" : 0.5
+      }
+    }
+  ],
+  "supported-platforms" : {
+    "circles" : [
+      "watchOS"
+    ],
+    "squares" : "shared"
+  }
+}
