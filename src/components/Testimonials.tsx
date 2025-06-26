@@ -1,4 +1,5 @@
 import Testimonial from "./Testimonial";
+import TestimonialRow from "./TestimonialRow";
 
 const testimonials = [
   {
@@ -10,6 +11,7 @@ const testimonials = [
     image: "/Martin_Hochel.webp",
     imageAlt: "Martin Hochel photo",
     alignment: "left" as const,
+    position: "left" as const,
   },
   {
     name: "Zdeněk Vičar",
@@ -19,6 +21,7 @@ const testimonials = [
     image: "/Zdenek_Vicar.webp",
     imageAlt: "Zdeněk Vičar photo",
     alignment: "right" as const,
+    position: "right" as const,
   },
   {
     name: "Milan Brych",
@@ -28,17 +31,20 @@ const testimonials = [
     image: "/Milan_Brych.webp",
     imageAlt: "Milan Brych avatar",
     alignment: "left" as const,
+    position: "left" as const,
   },
 ];
 
 export default function Testimonials() {
   return (
     <div
-      className="w-full flex flex-col gap-16 items-center justify-center mt-24"
-      data-oid="nux3al2"
+      className="w-full flex flex-col items-center justify-center mt-24"
+      data-oid="nl_zip8"
     >
       {testimonials.map((t) => (
-        <Testimonial key={t.name} {...t} data-oid="nw5n.l2" />
+        <TestimonialRow key={t.name} position={t.position} data-oid="ujhmyka">
+          <Testimonial {...t} data-oid="93zxn-_" />
+        </TestimonialRow>
       ))}
     </div>
   );

@@ -20,19 +20,20 @@ export default function Testimonial({
   const isLeft = alignment === "left";
   return (
     <div
-      className={`w-full flex flex-col md:flex-row items-center justify-center gap-8 md:gap-12`}
-      data-oid="rreb3ve"
+      className="w-full flex flex-col md:flex-row items-center justify-center gap-8 md:gap-12 min-h-[220px]"
+      data-oid="9.1yzmn"
     >
       {isLeft ? (
         <>
           {/* Quote (left) */}
           <div
-            className="flex-1 max-w-[340px] md:max-w-[320px]"
-            data-oid="rjx0twn"
+            className="flex-1 flex flex-col justify-left items-end max-w-[340px] md:max-w-[320px] h-full"
+            data-oid="1tf3df-"
           >
             <div
-              className="text-gray-800 text-sm md:text-base italic text-left md:text-right"
-              data-oid="id_cple"
+              className="text-gray-800 text-base md:text-lg italic text-right"
+              style={{ maxWidth: 320 }}
+              data-oid="i1crnt5"
             >
               "{quote}"
             </div>
@@ -53,18 +54,18 @@ export default function Testimonial({
           </div>
           {/* Name/Title (right) */}
           <div
-            className="flex-1 max-w-[340px] md:max-w-[320px]"
-            data-oid="rcd.ioe"
+            className="flex-1 flex flex-col justify-center items-start max-w-[340px] md:max-w-[320px] h-full"
+            data-oid="s:c_4g7"
           >
             <div
-              className="text-lg md:text-xl font-bold italic text-gray-800 mb-1 text-left md:text-left"
-              data-oid="5f8dc4y"
+              className="text-lg md:text-xl font-bold italic text-gray-800 mb-1 text-left"
+              data-oid="8ayouqw"
             >
               {name}
             </div>
             <div
-              className="text-base md:text-lg italic text-gray-600 text-left md:text-left"
-              data-oid="wugm038"
+              className="text-base md:text-lg italic text-gray-600 text-left"
+              data-oid="2.tg.-q"
             >
               {title}
             </div>
@@ -74,18 +75,18 @@ export default function Testimonial({
         <>
           {/* Name/Title (left) */}
           <div
-            className="flex-1 max-w-[340px] md:max-w-[320px]"
-            data-oid="fuba3ai"
+            className="flex-1 flex flex-col justify-right items-end max-w-[340px] md:max-w-[320px] h-full"
+            data-oid="altasm2"
           >
             <div
-              className="text-lg md:text-xl font-bold italic text-gray-800 mb-1 text-left md:text-left"
-              data-oid="l24obvc"
+              className="text-lg md:text-xl font-bold italic text-gray-800 mb-1 text-right"
+              data-oid=".vjiahs"
             >
               {name}
             </div>
             <div
-              className="text-base md:text-lg italic text-gray-600 text-left md:text-left"
-              data-oid="f-zvhcn"
+              className="text-base md:text-lg italic text-gray-600 text-right"
+              data-oid="ys3vbds"
             >
               {title}
             </div>
@@ -106,12 +107,13 @@ export default function Testimonial({
           </div>
           {/* Quote (right) */}
           <div
-            className="flex-1 max-w-[340px] md:max-w-[320px]"
-            data-oid="4gpp8ci"
+            className="flex-1 flex flex-col justify-center items-start max-w-[340px] md:max-w-[320px] h-full"
+            data-oid="lg18103"
           >
             <div
-              className="text-gray-800 text-sm md:text-base italic text-left md:text-right"
-              data-oid="1:mn3k7"
+              className="text-gray-800 text-base md:text-lg italic text-left"
+              style={{ maxWidth: 320 }}
+              data-oid="6n6rm:9"
             >
               "{quote}"
             </div>
